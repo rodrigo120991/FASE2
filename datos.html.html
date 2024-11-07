@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TABLA DE REGISTRO</title>
+    <STyle>
+        Table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </STyle>
+
+
+
+</head>
+<body>
+    <div class="wrap">
+        <h1>REGISTRO</h1>
+        <div class="store-wrapper">
+            <div class="category_list">
+                <a href="a" id="categoyItem" category ="all">Todo</a>
+                <a href="a" id="categoyItem" category ="EnProgreso">EnProgreso</a>
+                <a href="a" id="categoyItem" category ="Realizado">Realizado</a>
+                <a href="a" id="categoyItem" category ="Cancelado">Cancelado</a>
+                <a href="a" id="categoyItem" category ="Cerrado">Cerrado</a>
+                <a href="a" id="categoyItem" category ="PruebaCalidad">PruebaCalidad</a>
+                <a href="a" id="categoyItem" category ="ValidacionUsuario">ValidacionUsuario</a>
+                <a href="a" id="categoyItem" category ="ProcesoLiberacion">ProcesoLiberacion</a>
+
+            </div>
+            <section class="products-list">    
+                <div class="products-item" category =""> 
+
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+<body>
+    <H1>Tabla de Registro de Clientes</H1>
+ 
+    <input type="text" id="codigo" placeholder="CodigoID" >
+    <input type="text" id="titulo" placeholder="Titulo">
+    <input type="text" id="descripcion" placeholder="Descripcion">
+    <input type="date" id="fecha" placeholder="Fecha">
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="text" id="proyecto" placeholder="IDProyecto">
+    <input type="text" id="comentarios" placeholder="Comentarios">
+    <input type="text" id="status" placeholder="Status">
+    <Button id ="agregar"> Agregar </Button>
+    <input type="text" id = "actualizar" placeholder="Actualizar" >
+    <button id = "actualizarBtn">Actualizar </button>
+
+    <table id= "Tabla">
+        <thead>
+            <tr>
+                <th>Codigo ID</th>
+                <th>Titulo</th>
+                <th>Descripcion</th>
+                <th>Fecha</th>
+                <th>Nombre</th>
+                <th>ID Proyecto</th>
+                <th>Comentarios</th>
+                <th>Status</th>
+
+            </tr>
+        </thead>
+        <tbody id= "tablaCuerpo" > </tbody>
+    </table>
+    <script src="datos de usuario.js"></script>
+</body>
+
+</html>
